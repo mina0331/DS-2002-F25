@@ -123,14 +123,7 @@ def _load_inventory_data(inventory_dir: str) -> pd.DataFrame:
     return inventory_df
 
 def update_portfolio(inventory_dir: str, lookup_dir: str, output_file: str) -> None:
-    """
-    1) Load lookup + inventory
-    2) If inventory empty: write empty CSV headers and return
-    3) Merge on 'card_id' (left)
-    4) Fill missing values
-    5) Create 'index' = binder_name-page_number-slot_number
-    6) Select final columns and write CSV
-    """
+    
     lookup_df = _load_lookup_data(lookup_dir)
     inventory_df = _load_inventory_data(inventory_dir)
 

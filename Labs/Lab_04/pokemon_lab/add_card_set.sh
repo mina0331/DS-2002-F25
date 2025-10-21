@@ -13,5 +13,5 @@ curl -s "https://api.pokemontcg.io/v2/cards?q=set.id:${SET_ID}" \
     -o "card_set_lookup/${SET_ID}.json"
 
 
-echo "Data for set '$SET_ID' saved to card_set_loojup/${SET_ID}.json"
+echo "Data for set '$SET_ID' saved to card_set_lookjup/${SET_ID}.json"
 

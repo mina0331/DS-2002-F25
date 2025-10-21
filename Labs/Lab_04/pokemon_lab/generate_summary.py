@@ -59,12 +59,10 @@ def generate_summary(portfolio_file: str) -> None:
 
 
 def main() -> None:
-    """Public interface: run against production portfolio file."""
     generate_summary("card_portfolio.csv")
 
 
 def test() -> None:
-    """Public interface: run against test portfolio file."""
     generate_summary("test_card_portfolio.csv")
 
 
